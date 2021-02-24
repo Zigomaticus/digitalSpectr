@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Test</title>
+  </head>
+  <body>
+    <form class="form" method="POST" action="https://digital-spectr.com/ac/academy.php">
+      <h1 class="form__title">Задать вопрос</h1>
+      <input type="text" name="name" placeholder="Фамилия Имя Отчество *" required pattern="[А-ЯЁ][а-яё]{2,20}+\s[А-ЯЁ][а-яё]{2,20}+\s[А-ЯЁ][а-яё]{2,20}" title="Только русские буквы" minlength="2" />
+      <input type="tel" name="tel" placeholder="Телефон *" pattern="[0-9]+" required pattern="\+\d-\d{3}-\d{3}-\d{4}" title="Только цифры"/>
+      <input type="email" name="email" placeholder="Email" pattern="^\S+@\S+\.\S+$" title="Только email адрес" />
+      <button class="form__btn" type="submit">Отправить запрос</button>
+    </form>
+  </body>
+</html>
